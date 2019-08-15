@@ -79,6 +79,10 @@
 			
 				<li><a href="/" target="_blank" >主页</a></li>
 	        
+				<li><a href="/categories || th" target="_blank" >categories</a></li>
+	        
+				<li><a href="/tags/ || tags" target="_blank" >tags</a></li>
+	        
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
@@ -135,6 +139,10 @@
 			
 				
 			
+				
+			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -146,10 +154,14 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 100%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/categories || th">categories</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/tags/ || tags">tags</a></li>
 		        
 				</ul>
 			</nav>
@@ -244,8 +256,11 @@
     
   <div class="article-entry" itemprop="articleBody">
     
-    <p>#SpringMvc搭建配置<br>date: 2019-08-09 14:59:59</p>
-<p>###tags:前端<br>一次，在搭建springmvc框架的时候，按部就班突然遇到dispatcher-servlet.xml的问题，context:component-scan并不会报错，但是controler可以拦截url,注解扫描不到，个人判断是配置不全。<br>补全之后是这样的:  </p>
+    <hr>
+<p>#SpringMvc搭建配置<br>date: 2019-08-09 14:59:59</p>
+<p>###tags:前端</p>
+<hr>
+<p>一次，在搭建springmvc框架的时候，按部就班突然遇到dispatcher-servlet.xml的问题，context:component-scan并不会报错，但是controler可以拦截url,注解扫描不到，个人判断是配置不全。<br>补全之后是这样的:  </p>
 <pre><code>&lt;beans xmlns=&quot;http://www.springframework.org/schema/beans&quot;  
 xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
 xmlns:context=&quot;http://www.springframework.org/schema/context&quot;
